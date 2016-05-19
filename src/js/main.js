@@ -1,7 +1,13 @@
+var foo = require('./foo.js');
+
 var app = {
 
 	init : function(){
-		alert("hello app");
+		console.log(foo);
 	},
 
-}
+};
+
+$(document).ready(function () {
+    app.init();
+});
